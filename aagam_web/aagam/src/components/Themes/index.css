@@ -1,0 +1,29 @@
+.theme-container {
+    display: flex;
+    gap: 12px;
+    /* width: 85%; */
+    /* border: 1.5px solid #ece3ce; */
+    /* border-radius: 20px; */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: #ece3ce; */
+}
+
+.theme-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: 2px solid #4F6F52;
+    cursor: pointer;
+    border-radius: 15px;
+    /* width: 10%; */
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.theme-box img {
+    width: 125px;
+    height: 175px;
+    object-fit: contain;
+}
