@@ -92,7 +92,7 @@ const AdminPage = () => {
   //     try {
   //       const response = await axios({
   //         method: 'post',
-  //         url: 'http://localhost:4000/adminpattern/add',
+  //         url: 'https://aagam-web-backend.onrender.com/adminpattern/add',
   //         data: {
   //           name: title,
   //           image: Array.from(image),

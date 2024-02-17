@@ -11,7 +11,7 @@
 //     const [recieveddata, setrecieveddata] = useState([]); 
 //     const [mainTitle, subtypename] = title.split('+');
 //     useEffect(() => {
-//         axios.get('http://localhost:4000/customizer', { params: { title: mainTitle } })
+//         axios.get('https://aagam-web-backend.onrender.com/customizer', { params: { title: mainTitle } })
 //             .then(response => {
 //                 setrecieveddata(response.data);
 //                 console.log("Response data: ", response.data);
@@ -66,7 +66,7 @@ export default function Subtypes(props) {
     // const [mainTitle, subtypename] = title.split('+');
     // const subtypes = props.items_list;
     // useEffect(() => {
-    //     axios.get('http://localhost:4000/customizer', { params: { title: mainTitle } })
+    //     axios.get('https://aagam-web-backend.onrender.com/customizer', { params: { title: mainTitle } })
     //         .then(response => {
     //             setrecieveddata(response.data);
     //             console.log("Response data: ", response.data);

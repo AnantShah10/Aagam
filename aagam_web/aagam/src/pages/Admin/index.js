@@ -15,7 +15,7 @@ export default function Admin() {
     let type_hands_face = useRef();
 
     useEffect(() => {
-        axios.post('http://localhost:4000/admin')
+        axios.post('https://aagam-web-backend.onrender.com/admin')
             .then(response => {
                 setrecieveddata(response.data);
                 console.log("Response data: ", response.data);
@@ -68,7 +68,7 @@ export default function Admin() {
                                     <input type="submit" onClick={() => {
                                         axios({
                                             method: 'post',
-                                            url: 'http://localhost:4000/admin/add_type',
+                                            url: 'https://aagam-web-backend.onrender.com/admin/add_type',
                                             data: {
                                                 name: type_name.current.value,
                                                 main_image: Array.from(type_image.current),

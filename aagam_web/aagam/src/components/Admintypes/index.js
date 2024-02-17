@@ -90,7 +90,7 @@ export default function Admintypes(props) {
                                     <input type="submit" onClick={() => {
                                         axios({
                                             method: 'post',
-                                            url: 'http://localhost:4000/admin/add_subtype',
+                                            url: 'https://aagam-web-backend.onrender.com/admin/add_subtype',
                                             data: {
                                                 name: props.name,
                                                 subtype_name: subtype_name.current.value,
@@ -140,7 +140,7 @@ export default function Admintypes(props) {
                                     <input type="submit" onClick={() => {
                                         axios({
                                             method: 'post',
-                                            url: 'http://localhost:4000/admin/edit_subtype',
+                                            url: 'https://aagam-web-backend.onrender.com/admin/edit_subtype',
                                             data: {
                                                 name: props.name,
                                                 index: selectedTypeIndex,
@@ -167,7 +167,7 @@ export default function Admintypes(props) {
                 <input type="submit" onClick={() => {
                     axios({
                         method: 'post',
-                        url: 'http://localhost:4000/admin/delete_design',
+                        url: 'https://aagam-web-backend.onrender.com/admin/delete_design',
                         data: {
                             name: props.name,
                             index: selectedTypeIndex,

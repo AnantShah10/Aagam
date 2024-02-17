@@ -16,7 +16,7 @@ export default function AdminPage() {
     let length = useRef();
 
     useEffect(() => {
-        axios.post('http://localhost:4000/adminpattern/')
+        axios.post('https://aagam-web-backend.onrender.com/adminpattern/')
             .then(response => {
                 setrecieveddata(response.data);
                 console.log("Response data: ", response.data);
@@ -68,7 +68,7 @@ export default function AdminPage() {
                                     <input type="submit" onClick={() => {
                                         axios({
                                             method: 'post',
-                                            url: 'http://localhost:4000/adminpattern/add',
+                                            url: 'https://aagam-web-backend.onrender.com/adminpattern/add',
                                             data: {
                                                 name: name.current.value,
                                                 pattern_image: Array.from(pattern_image.current),
@@ -109,7 +109,7 @@ export default function AdminPage() {
                     <input type="submit" onClick={() => {
                         axios({
                             method: 'post',
-                            url: 'http://localhost:4000/adminpattern/add',
+                            url: 'https://aagam-web-backend.onrender.com/adminpattern/add',
                             data: {
                                 name: name.current.value,
                                 pattern_image: Array.from(pattern_image.current),
@@ -162,7 +162,7 @@ export default function AdminPage() {
                             <input type="submit" onClick={() => {
                                 axios({
                                     method: 'post',
-                                    url: 'http://localhost:4000/adminpattern/delete',
+                                    url: 'https://aagam-web-backend.onrender.com/adminpattern/delete',
                                     data: {
                                         name: item.name,
                                         length: item.length
@@ -210,7 +210,7 @@ export default function AdminPage() {
                             <input type="submit" onClick={() => {
                                 axios({
                                     method: 'post',
-                                    url: 'http://localhost:4000/adminpattern/delete',
+                                    url: 'https://aagam-web-backend.onrender.com/adminpattern/delete',
                                     data: {
                                         name: item.name,
                                         length: item.length
@@ -258,7 +258,7 @@ export default function AdminPage() {
                             <input type="submit" onClick={() => {
                                 axios({
                                     method: 'post',
-                                    url: 'http://localhost:4000/adminpattern/delete',
+                                    url: 'https://aagam-web-backend.onrender.com/adminpattern/delete',
                                     data: {
                                         name: item.name,
                                         length: item.length
@@ -306,7 +306,7 @@ export default function AdminPage() {
                             <input type="submit" onClick={() => {
                                 axios({
                                     method: 'post',
-                                    url: 'http://localhost:4000/adminpattern/delete',
+                                    url: 'https://aagam-web-backend.onrender.com/adminpattern/delete',
                                     data: {
                                         name: item.name,
                                         length: item.length
@@ -354,7 +354,7 @@ export default function AdminPage() {
                             <input type="submit" onClick={() => {
                                 axios({
                                     method: 'post',
-                                    url: 'http://localhost:4000/adminpattern/delete',
+                                    url: 'https://aagam-web-backend.onrender.com/adminpattern/delete',
                                     data: {
                                         name: item.name,
                                         length: item.length
@@ -402,7 +402,7 @@ export default function AdminPage() {
                             <input type="submit" onClick={() => {
                                 axios({
                                     method: 'post',
-                                    url: 'http://localhost:4000/adminpattern/delete',
+                                    url: 'https://aagam-web-backend.onrender.com/adminpattern/delete',
                                     data: {
                                         name: item.name,
                                         length: item.length

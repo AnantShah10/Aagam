@@ -69,7 +69,7 @@ export default function Customize() {
         console.log("useEffect called");
         axios({
             method: 'post',
-            url: 'http://localhost:4000/customizer',
+            url: 'https://aagam-web-backend.onrender.com/customizer',
             data: {
                 mainTypeName: type_name,
             }
