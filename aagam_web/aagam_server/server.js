@@ -286,4 +286,4 @@ app.post('/adminpattern/delete', async (request, response) => {
     response.status(200).send('Deletion successful');
 });
 
-app.listen(4000, () => console.log("Server on port 4000"));
+app.listen(process.env.PORT, () => console.log("Server on port", process.env.PORT));
