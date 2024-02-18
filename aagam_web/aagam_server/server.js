@@ -10,30 +10,30 @@ app.use(express.json({ limit: '250mb' }));
 app.use(express.urlencoded({ extended: true, limit: '250mb' }));
 app.use(cors());
 
-// const mainimage = require('fs').readFileSync('C:/Users/Anant/Downloads/Aagam/Aagam-Web/aagam/src/assets/model.png');
-// const handsfaceimage = require('fs').readFileSync('C:/Users/Anant/Downloads/Aagam/Aagam-Web/aagam/src/assets/face_and_hands.png');
-// pool.query('INSERT INTO types (name, main_image, hands_and_face) VALUES ($1, $2, $3)', ['Kurta', mainimage, handsfaceimage], (error, results) => {
+// const mainimage = require('fs').readFileSync('C:/Users/Anant/Documents/Projects/Aagam/aagam_web/aagam/src/assets/model.png');
+// const handsfaceimage = require('fs').readFileSync('C:/Users/Anant/Documents/Projects/Aagam/aagam_web/aagam/src/assets/face_and_hands.png');
+// pool.query('INSERT INTO types (name, main_image, hands_and_face) VALUES ($1, $2, $3)', ['Jodpuri', mainimage, handsfaceimage], (error, results) => {
 //     if (error) {
 //         throw error;
 //     }
-//     console.log('Kurta inserted successfully');
+//     console.log('Jodpuri inserted successfully');
 // });
 
 // const model = require('fs').readFileSync('C:/Users/Anant/Downloads/Aagam/Aagam-Web/aagam/src/assets/model copy.png');
 // console.log(model);
-// pool.query('INSERT INTO subtypes (name, subtype_name, subtypes_image, hands_and_face) VALUES ($1, $2, $3, $4)', ['Kurta', 'Type5', model, model], (error, results) => {
+// pool.query('INSERT INTO subtypes (name, subtype_name, subtypes_image, hands_and_face) VALUES ($1, $2, $3, $4)', ['Jodpuri', 'Type3', model, model], (error, results) => {
 //     if (error) {
 //         throw error;
 //     }
-//     console.log('Kurta5 inserted successfully');
+//     console.log('Jodpuri3 inserted successfully');
 // });
 
-// const mainimage = require('fs').readFileSync('C:/Users/Anant/Downloads/Aagam/Aagam-Web/aagam/src/assets/yellow.JPG');
-// pool.query('INSERT INTO patterns (name, pattern_image, length) VALUES ($1, $2, $3)', ['Yellow', mainimage, 20], (error, results) => {
+// const mainimage = require('fs').readFileSync('C:/Users/Anant/Documents/Projects/Aagam/aagam_web/aagam/src/assets/blue_bg.png');
+// pool.query('INSERT INTO patterns (name, pattern_image, length) VALUES ($1, $2, $3)', ['Blue', mainimage, 20], (error, results) => {
 //     if (error) {
 //         throw error;
 //     }
-//     console.log('Yellow inserted successfully');
+//     console.log('Blue inserted successfully');
 // });
 
 app.post('/customizer', (request, response) => {
