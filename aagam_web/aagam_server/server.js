@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const pool = require("./database.js");
+const port = process.env.PORT || 4000;
 
 const app = express();
 
@@ -286,4 +287,4 @@ app.post('/adminpattern/delete', async (request, response) => {
     response.status(200).send('Deletion successful');
 });
 
-app.listen(process.env.PORT, () => console.log("Server on port", process.env.PORT));
+app.listen(port, () => console.log("Server on port", port));
